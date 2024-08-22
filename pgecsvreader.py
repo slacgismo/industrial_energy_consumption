@@ -1,6 +1,6 @@
 import marimo
 
-__generated_with = "0.7.19"
+__generated_with = "0.8.0"
 app = marimo.App(width="medium")
 
 
@@ -33,10 +33,10 @@ def __(mo):
 def __(np, pd, removeRepeats, year):
     # To load electricity data, you need to have the relevant csv files downloaded to your computer or uploaded to github
 
-    dataQ1 = pd.read_csv("PGE_"+year.value+"_Q1_ElectricUsageByZip.csv")
-    dataQ2 = pd.read_csv("PGE_"+year.value+"_Q2_ElectricUsageByZip.csv")
-    dataQ3 = pd.read_csv("PGE_"+year.value+"_Q3_ElectricUsageByZip.csv")
-    dataQ4 = pd.read_csv("PGE_"+year.value+"_Q4_ElectricUsageByZip.csv")
+    dataQ1 = pd.read_csv("https://github.com/slacgismo/industrial_energy_consumption/raw/main/PGE_"+year.value+"_Q1_ElectricUsageByZip.csv")
+    dataQ2 = pd.read_csv("https://github.com/slacgismo/industrial_energy_consumption/raw/main/PGE_"+year.value+"_Q2_ElectricUsageByZip.csv")
+    dataQ3 = pd.read_csv("https://github.com/slacgismo/industrial_energy_consumption/raw/main/PGE_"+year.value+"_Q3_ElectricUsageByZip.csv")
+    dataQ4 = pd.read_csv("https://github.com/slacgismo/industrial_energy_consumption/raw/main/PGE_"+year.value+"_Q4_ElectricUsageByZip.csv")
 
     # year = data.iloc[0,2]
     # print(year)
